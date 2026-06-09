@@ -14,12 +14,15 @@ function App() {
             gap={2}
         >
             <Header />
-            <box width={80}>
+            <box width="100%" maxWidth={78} paddingX={2}>
                 <InputBar onSubmit={() => {}} />
             </box>
         </box>
     );
 }
 
-const renderer = await createCliRenderer();
+const renderer = await createCliRenderer({
+    targetFps: 60,
+    exitOnCtrlC: false,
+});
 createRoot(renderer).render(<App />);
