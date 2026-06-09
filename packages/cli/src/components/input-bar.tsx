@@ -1,5 +1,5 @@
 import type { KeyBinding } from "@opentui/core";
-import { EmptyBorder } from "./boder";
+import { EmptyBorder } from "./border";
 import { StatusBar } from "./status-bar";
 import { CommandMenu } from "./commands-menu";
 import { useRef, useEffect, useCallback } from "react";

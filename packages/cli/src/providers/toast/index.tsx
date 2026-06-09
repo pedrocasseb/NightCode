@@ -9,7 +9,7 @@ import type { ReactNode } from "react";
 import { useTerminalDimensions } from "@opentui/react";
 import type { ToastOptions, ToastVariant } from "./types";
 import { DEFAULT_DURATION } from "./types";
-import { SplitBorderChars } from "../../components/boder";
+import { SplitBorderChars } from "../../components/border";
 
 export type ToastContextValue = {
     show: (options: ToastOptions) => void;
